@@ -4,6 +4,8 @@
 *.duckdb
 *.duckdb.wal
 *.duckdb.tmp
+*.pdf
+
 
 # python/jupyter clutter
 **/__pycache__/
