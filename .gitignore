@@ -1,0 +1,10 @@
+# ignore raw data and local warehouses anywhere
+**/data/raw/
+**/data/warehouse/
+*.duckdb
+*.duckdb.wal
+*.duckdb.tmp
+
+# python/jupyter clutter
+**/__pycache__/
+**/.ipynb_checkpoints/
