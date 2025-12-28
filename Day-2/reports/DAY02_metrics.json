@@ -1,0 +1,36 @@
+{
+  "split": {
+    "method": "GroupShuffleSplit by person_id",
+    "test_size": 0.2,
+    "random_state": 42
+  },
+  "sizes": {
+    "n_train": 81613,
+    "n_test": 20153,
+    "patient_overlap": 0
+  },
+  "prevalence": {
+    "train": 0.11280065675811451,
+    "test": 0.10673348881059892
+  },
+  "balanced_logreg": {
+    "mean_p": 0.4633582868128641,
+    "median_p": 0.44253766772376063,
+    "pr_auc": 0.2003643459623441,
+    "roc_auc": 0.6594948435658604,
+    "brier": 0.225132204684523
+  },
+  "unweighted_logreg": {
+    "mean_p": 0.11115574477773268,
+    "median_p": 0.09391401180966698,
+    "pr_auc": 0.19934446442882986,
+    "roc_auc": 0.6584203464969618,
+    "brier": 0.09188424733800181,
+    "topk": {
+      "top1_pct_precision": 0.361,
+      "top5_pct_precision": 0.298,
+      "top10_pct_precision": 0.255,
+      "top20_pct_precision": 0.198
+    }
+  }
+}
