@@ -1,0 +1,84 @@
+{
+  "split": {
+    "method": "GroupShuffleSplit by person_id",
+    "test_size": 0.2,
+    "random_state": 42,
+    "patient_overlap": 0
+  },
+  "model_A_no_indicators": {
+    "prevalence": 0.10673348881059892,
+    "mean_p": 0.11115573850334283,
+    "median_p": 0.09391402218741597,
+    "pr_auc": 0.1993444353875619,
+    "roc_auc": 0.658420269022229,
+    "brier": 0.09188424740300427
+  },
+  "model_B_with_indicators": {
+    "prevalence": 0.10673348881059892,
+    "mean_p": 0.1111557385033444,
+    "median_p": 0.09391402218741343,
+    "pr_auc": 0.1993444353875619,
+    "roc_auc": 0.658420269022229,
+    "brier": 0.0918842474030044
+  },
+  "topk_A": [
+    {
+      "top_frac": 0.01,
+      "k": 201,
+      "captured": 73,
+      "precision_at_k": 0.36318407960199006,
+      "threshold": 0.3651704547590214
+    },
+    {
+      "top_frac": 0.05,
+      "k": 1007,
+      "captured": 300,
+      "precision_at_k": 0.29791459781529295,
+      "threshold": 0.23218551454399977
+    },
+    {
+      "top_frac": 0.1,
+      "k": 2015,
+      "captured": 514,
+      "precision_at_k": 0.25508684863523573,
+      "threshold": 0.1785440846228591
+    },
+    {
+      "top_frac": 0.2,
+      "k": 4030,
+      "captured": 799,
+      "precision_at_k": 0.19826302729528536,
+      "threshold": 0.13549416840514011
+    }
+  ],
+  "topk_B": [
+    {
+      "top_frac": 0.01,
+      "k": 201,
+      "captured": 73,
+      "precision_at_k": 0.36318407960199006,
+      "threshold": 0.36517045475903925
+    },
+    {
+      "top_frac": 0.05,
+      "k": 1007,
+      "captured": 300,
+      "precision_at_k": 0.29791459781529295,
+      "threshold": 0.23218551454402306
+    },
+    {
+      "top_frac": 0.1,
+      "k": 2015,
+      "captured": 514,
+      "precision_at_k": 0.25508684863523573,
+      "threshold": 0.17854408462287003
+    },
+    {
+      "top_frac": 0.2,
+      "k": 4030,
+      "captured": 799,
+      "precision_at_k": 0.19826302729528536,
+      "threshold": 0.13549416840513492
+    }
+  ]
+}
