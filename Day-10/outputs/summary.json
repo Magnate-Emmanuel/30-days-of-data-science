@@ -1,0 +1,34 @@
+{
+  "run_id": "run_20260105_140221",
+  "mode": "score",
+  "input": "C:\\Users\\sarfo\\Dropbox\\Courses\\Data Science\\30-days-of-data-science\\Day-10\\data\\input_example.csv",
+  "rows": 2000,
+  "schema_hash": "59e8199fa1fd2d69c509d888fa4e9364",
+  "warnings": [
+    "High missingness (>25%) in features: ['A1Cresult']"
+  ],
+  "probability_distribution": {
+    "mean": 0.11181433802881023,
+    "median": 0.10454247224236939,
+    "quantiles": {
+      "q0": 0.04258667111295559,
+      "q1": 0.06439637113664136,
+      "q5": 0.08351085347470565,
+      "q10": 0.08802723028411884,
+      "q50": 0.10454247224236939,
+      "q90": 0.1431148649022408,
+      "q95": 0.17311515424291113,
+      "q99": 0.21729342542131422,
+      "q100": 0.46471542780444774
+    }
+  },
+  "outputs": {
+    "scored_csv": "C:\\Users\\sarfo\\Dropbox\\Courses\\Data Science\\30-days-of-data-science\\Day-10\\outputs\\scored.csv",
+    "topk_files": [
+      "C:\\Users\\sarfo\\Dropbox\\Courses\\Data Science\\30-days-of-data-science\\Day-10\\outputs\\ranked_top_1pct.csv",
+      "C:\\Users\\sarfo\\Dropbox\\Courses\\Data Science\\30-days-of-data-science\\Day-10\\outputs\\ranked_top_5pct.csv",
+      "C:\\Users\\sarfo\\Dropbox\\Courses\\Data Science\\30-days-of-data-science\\Day-10\\outputs\\ranked_top_10pct.csv",
+      "C:\\Users\\sarfo\\Dropbox\\Courses\\Data Science\\30-days-of-data-science\\Day-10\\outputs\\ranked_top_20pct.csv"
+    ]
+  }
+}

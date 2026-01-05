@@ -1,0 +1,15 @@
+run_id: run_20260105_140221
+timestamp_local: 2026-01-05T14:02:21
+mode: score
+input: C:\Users\sarfo\Dropbox\Courses\Data Science\30-days-of-data-science\Day-10\data\input_example.csv
+rows_scored: 2000
+schema_hash: 59e8199fa1fd2d69c509d888fa4e9364
+warnings:
+  - High missingness (>25%) in features: ['A1Cresult']
+wrote: C:\Users\sarfo\Dropbox\Courses\Data Science\30-days-of-data-science\Day-10\outputs\scored.csv
+wrote: C:\Users\sarfo\Dropbox\Courses\Data Science\30-days-of-data-science\Day-10\outputs\summary.json
+wrote: C:\Users\sarfo\Dropbox\Courses\Data Science\30-days-of-data-science\Day-10\outputs\ranked_top_1pct.csv
+wrote: C:\Users\sarfo\Dropbox\Courses\Data Science\30-days-of-data-science\Day-10\outputs\ranked_top_5pct.csv
+wrote: C:\Users\sarfo\Dropbox\Courses\Data Science\30-days-of-data-science\Day-10\outputs\ranked_top_10pct.csv
+wrote: C:\Users\sarfo\Dropbox\Courses\Data Science\30-days-of-data-science\Day-10\outputs\ranked_top_20pct.csv
+duckdb_writeback: C:\Users\sarfo\Dropbox\Courses\Data Science\30-days-of-data-science\Day-1\data\warehouse\day1.duckdb
