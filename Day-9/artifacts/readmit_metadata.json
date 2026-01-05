@@ -1,0 +1,56 @@
+{
+  "project": "diabetes_readmission",
+  "label": "readmitted <30 (y_readmit_30)",
+  "split": "GroupShuffleSplit by person_id (train/valid/test), calibrator fit on OOF predictions within train (GroupKFold K=5)",
+  "model": "HistGradientBoostingClassifier(max_depth=6, learning_rate=0.05, max_iter=400)",
+  "calibration": "Platt scaling (logistic regression on logit(p_raw))",
+  "valid_metrics": {
+    "prevalence": 0.11461818181818181,
+    "mean_p": 0.11327204954074022,
+    "median_p": 0.09911347204037121,
+    "pr_auc": 0.22467831773854963,
+    "roc_auc": 0.6677610282599987,
+    "brier": 0.09682699948900617,
+    "logloss": 0.33575903386252465
+  },
+  "test_metrics": {
+    "prevalence": 0.10673348881059892,
+    "mean_p": 0.11166645743436707,
+    "median_p": 0.09794703429186898,
+    "pr_auc": 0.2078325210559714,
+    "roc_auc": 0.6666140354981995,
+    "brier": 0.0913482386427387,
+    "logloss": 0.3211129468363118
+  },
+  "topk_test": [
+    {
+      "top_frac": 0.01,
+      "k": 201,
+      "captured": 73,
+      "precision_at_k": 0.36318407960199006,
+      "threshold": 0.3494286102081742
+    },
+    {
+      "top_frac": 0.05,
+      "k": 1007,
+      "captured": 304,
+      "precision_at_k": 0.3018867924528302,
+      "threshold": 0.23179108027082457
+    },
+    {
+      "top_frac": 0.1,
+      "k": 2015,
+      "captured": 502,
+      "precision_at_k": 0.2491315136476427,
+      "threshold": 0.19038341536822131
+    },
+    {
+      "top_frac": 0.2,
+      "k": 4030,
+      "captured": 829,
+      "precision_at_k": 0.20570719602977666,
+      "threshold": 0.14351083032576595
+    }
+  ],
+  "created_by": "Day 9 pipeline"
+}

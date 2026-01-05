@@ -1,0 +1,47 @@
+{
+  "id_cols": [
+    "encounter_id",
+    "person_id",
+    "label"
+  ],
+  "feature_cols": [
+    "time_in_hospital",
+    "num_lab_procedures",
+    "num_procedures",
+    "num_medications",
+    "number_outpatient",
+    "number_emergency",
+    "number_inpatient",
+    "race",
+    "gender",
+    "age",
+    "admission_type_id",
+    "discharge_disposition_id",
+    "admission_source_id",
+    "diabetesMed",
+    "change",
+    "insulin",
+    "A1Cresult"
+  ],
+  "numeric_cols": [
+    "time_in_hospital",
+    "num_lab_procedures",
+    "num_procedures",
+    "num_medications",
+    "number_outpatient",
+    "number_emergency",
+    "number_inpatient"
+  ],
+  "categorical_cols": [
+    "race",
+    "gender",
+    "age",
+    "admission_type_id",
+    "discharge_disposition_id",
+    "admission_source_id",
+    "diabetesMed",
+    "change",
+    "insulin",
+    "A1Cresult"
+  ]
+}
