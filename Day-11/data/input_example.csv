@@ -1,0 +1,4 @@
+appointment_id,person_id,age,gender,neighbourhood,scholarship,hipertension,diabetes,alcoholism,handcap,lead_time_days
+1,101,25,F,JARDIM DA PENHA,0,0,0,0,0,10
+2,102,60,M,CENTRO,1,1,0,0,0,3
+3,103,41,F,SANTA MARTHA,0,0,1,0,0,0

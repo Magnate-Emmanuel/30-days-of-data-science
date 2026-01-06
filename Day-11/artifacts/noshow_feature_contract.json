@@ -1,0 +1,34 @@
+{
+  "id_cols": [
+    "appointment_id",
+    "person_id"
+  ],
+  "label_col": "label",
+  "treatment_col": "sms_received",
+  "feature_cols": [
+    "age",
+    "gender",
+    "neighbourhood",
+    "scholarship",
+    "hipertension",
+    "diabetes",
+    "alcoholism",
+    "handcap",
+    "lead_time_days"
+  ],
+  "numeric_cols": [
+    "age",
+    "lead_time_days"
+  ],
+  "categorical_cols": [
+    "gender",
+    "neighbourhood"
+  ],
+  "binary_cols": [
+    "scholarship",
+    "hipertension",
+    "diabetes",
+    "alcoholism",
+    "handcap"
+  ]
+}
