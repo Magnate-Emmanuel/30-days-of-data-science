@@ -1,0 +1,10 @@
+column,missing_count,missing_rate,prev_if_missing,prev_if_observed,diff_missing_minus_observed
+age,0,0.0,,0.20188027073003004,
+gender,0,0.0,,0.20188027073003004,
+neighbourhood,0,0.0,,0.20188027073003004,
+scholarship,0,0.0,,0.20188027073003004,
+hipertension,0,0.0,,0.20188027073003004,
+diabetes,0,0.0,,0.20188027073003004,
+alcoholism,0,0.0,,0.20188027073003004,
+handcap,0,0.0,,0.20188027073003004,
+lead_time_days,0,0.0,,0.20188027073003004,

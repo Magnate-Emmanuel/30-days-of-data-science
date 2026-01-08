@@ -1,0 +1,8 @@
+{
+  "rows_gold": 110516,
+  "dup_appointment_id": 0,
+  "label_nulls": 0,
+  "sms_nulls": 0,
+  "lead_negative": 0,
+  "age_out_of_range": 0
+}
