@@ -1,0 +1,28 @@
+{
+  "db_path": "C:\\Users\\sarfo\\Dropbox\\Courses\\Data Science\\30-days-of-data-science\\Day-11\\data\\warehouse\\day11_noshow.duckdb",
+  "gold_table": "gold_appointments_features_v1",
+  "split_table": "split_patient_v1",
+  "split_view": "gold_appointments_features_v1_patient_split",
+  "split_counts": [
+    {
+      "split": "test",
+      "rows": 16499,
+      "people": 9410,
+      "no_show_prevalence": 0.19492090429723014
+    },
+    {
+      "split": "train",
+      "rows": 77368,
+      "people": 43579,
+      "no_show_prevalence": 0.20301675111157066
+    },
+    {
+      "split": "valid",
+      "rows": 16649,
+      "people": 9307,
+      "no_show_prevalence": 0.20349570544777465
+    }
+  ],
+  "patient_overlap_count": 0,
+  "split_rule": "patient-hash: u<0.70 train, u<0.85 valid, else test"
+}
