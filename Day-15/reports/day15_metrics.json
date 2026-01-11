@@ -1,0 +1,100 @@
+{
+  "timestamp_local": "2026-01-10T19:53:48",
+  "db_path": "C:\\Users\\sarfo\\Dropbox\\Courses\\Data Science\\30-days-of-data-science\\Day-11\\data\\warehouse\\day11_noshow.duckdb",
+  "view_used": "gold_appointments_features_v1_patient_split",
+  "best_model": "hist_gb",
+  "leaderboard_valid_sorted": [
+    {
+      "model": "hist_gb",
+      "valid_pr_auc": 0.37137528441261786,
+      "valid_brier": 0.1437029502161508,
+      "valid_logloss": 0.43980488123403594,
+      "valid_top10_precision": 0.4188701923076923,
+      "test_pr_auc": 0.3597989973811414,
+      "test_brier": 0.1395286511330529,
+      "test_logloss": 0.42903541270805634,
+      "test_top10_precision": 0.4105518496058217
+    },
+    {
+      "model": "rf",
+      "valid_pr_auc": 0.36392432292982374,
+      "valid_brier": 0.1446812475489034,
+      "valid_logloss": 0.44319963270085283,
+      "valid_top10_precision": 0.4050480769230769,
+      "test_pr_auc": 0.3524467311255014,
+      "test_brier": 0.1404712927241789,
+      "test_logloss": 0.4325531077795249,
+      "test_top10_precision": 0.39842328684050937
+    },
+    {
+      "model": "tree",
+      "valid_pr_auc": 0.335357124844193,
+      "valid_brier": 0.14581160120912387,
+      "valid_logloss": 0.44620985642517863,
+      "valid_top10_precision": 0.36899038461538464,
+      "test_pr_auc": 0.3242962079938953,
+      "test_brier": 0.14148739764052187,
+      "test_logloss": 0.43489983436204493,
+      "test_top10_precision": 0.35112189205579136
+    },
+    {
+      "model": "logreg",
+      "valid_pr_auc": 0.3414466801179032,
+      "valid_brier": 0.1464672150702212,
+      "valid_logloss": 0.44960487867278065,
+      "valid_top10_precision": 0.3780048076923077,
+      "test_pr_auc": 0.33537498142553757,
+      "test_brier": 0.1419684790084781,
+      "test_logloss": 0.4384710271804492,
+      "test_top10_precision": 0.3784111582777441
+    }
+  ],
+  "valid_calibrated_metrics": {
+    "prevalence": 0.20349570544777465,
+    "mean_p": 0.20356071860360694,
+    "median_p": 0.17965294343169308,
+    "pr_auc": 0.37137528441261786,
+    "roc_auc": 0.7368793740279505,
+    "brier": 0.1452222568330195,
+    "logloss": 0.44661341284334144
+  },
+  "test_calibrated_metrics": {
+    "prevalence": 0.19492090429723014,
+    "mean_p": 0.20335601817356758,
+    "median_p": 0.1800428200244986,
+    "pr_auc": 0.3597989973811414,
+    "roc_auc": 0.7397114639480457,
+    "brier": 0.14084112620677178,
+    "logloss": 0.4358437775024725
+  },
+  "test_topk_calibrated": [
+    {
+      "top_frac": 0.01,
+      "k": 164,
+      "captured": 85,
+      "precision_at_k": 0.5182926829268293,
+      "threshold": 0.6005846754320254
+    },
+    {
+      "top_frac": 0.05,
+      "k": 824,
+      "captured": 362,
+      "precision_at_k": 0.4393203883495146,
+      "threshold": 0.4507367716001566
+    },
+    {
+      "top_frac": 0.1,
+      "k": 1649,
+      "captured": 677,
+      "precision_at_k": 0.4105518496058217,
+      "threshold": 0.39323639605387173
+    },
+    {
+      "top_frac": 0.2,
+      "k": 3299,
+      "captured": 1220,
+      "precision_at_k": 0.36980903304031526,
+      "threshold": 0.31780418585262915
+    }
+  ]
+}
