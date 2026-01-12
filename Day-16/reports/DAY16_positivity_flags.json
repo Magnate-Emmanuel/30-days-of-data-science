@@ -1,0 +1,6 @@
+{
+  "eps": 0.01,
+  "share_ps_lt_eps": 0.0,
+  "share_ps_gt_1_minus_eps": 0.002017807376307503,
+  "recommended_trim": "If either share is large, consider trimming to [0.01, 0.99] before IPW/AIPW (Day 17)."
+}

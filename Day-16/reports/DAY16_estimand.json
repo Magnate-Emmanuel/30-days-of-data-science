@@ -1,0 +1,12 @@
+{
+  "question": "What is the causal effect of receiving an SMS reminder on no-show?",
+  "treatment_A": "sms_received",
+  "outcome_Y": "label",
+  "estimand": "ATE = E[Y(1) - Y(0)] on probability of no-show (Y=1)",
+  "identification_assumptions": [
+    "Consistency",
+    "Conditional exchangeability given observed covariates X",
+    "Positivity (overlap): 0 < P(A=1|X) < 1 for relevant X",
+    "No interference / well-defined treatment"
+  ]
+}
