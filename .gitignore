@@ -13,3 +13,9 @@
 
 **/.virtual_documents/
 **/anaconda_projects/
+
+
+
+# big intermediate exports (keep only small summaries + plots)
+**/reports/*scored*.csv
+**/reports/*analysis_df*.csv
