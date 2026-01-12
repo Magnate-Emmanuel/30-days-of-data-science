@@ -1,0 +1,2 @@
+estimand,Y_definition_note,trim,naive_diff_in_means,ipw_ate,ipw_ci_low,ipw_ci_high,aipw_ate,aipw_ci_low,aipw_ci_high,n_used
+ATE of SMS on Y (label),Verify: label=1 likely means no-show; interpret sign accordingly,0.01-0.99,0.108804462786639,-0.04605466292383442,-0.056290428001043114,-0.037508429790076674,-0.04229419911236055,-0.05149046167603051,-0.03375771412522062,61390
