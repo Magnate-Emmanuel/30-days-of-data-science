@@ -1,0 +1,2 @@
+appointment_id,person_id,age,gender,neighbourhood,scholarship,hipertension,diabetes,alcoholism,handcap,lead_time_days,lead_time_clipped,lead_time_log1p,lead_time_bin,appt_dow,appt_month,sched_dow,sched_month,sched_hour,nbhd_n,prior_appt_count
+5586010,66566534618649,15.0,M,ROMÃO,0,0,0,0,3,18,18,2.9444389791664403,15_30,2,5,5,4,3,2214,0
