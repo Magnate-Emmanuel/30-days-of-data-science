@@ -1,0 +1,56 @@
+version: 1
+name: hospcap_state_daily_v1
+description: >
+  Forecasting contract for hospital capacity utilization at a state-by-day grain.
+  Day 21 stores this contract in DuckDB; Day 22+ uses it to validate gold tables,
+  backtests, and alert triggers.
+
+source:
+  duckdb_table: silver.hhs_state_timeseries
+  date_col: ds
+  key_cols: [state]
+  grain: state_daily
+
+forecast:
+  horizons_days: [7, 14, 21]
+  frequency: D
+  min_history_days: 180
+
+targets:
+  # These are "required" only if present in the source.
+  # Day 21 validation prints the available columns and fails if *none* of the required targets exist.
+  - name: inpatient_beds_used
+    source_column: inpatient_beds_used
+    required: true
+  - name: icu_beds_used
+    source_column: icu_beds_used
+    required: true
+  - name: inpatient_beds_used_covid
+    source_column: inpatient_beds_used_covid
+    required: false
+
+allowed_covariates:
+  # We keep this intentionally permissive for Day 21; Day 23 will harden + document engineered features.
+  include_columns:
+    - total_staffed_adult_icu_beds
+    - total_inpatient_beds
+    - previous_day_admission_adult_covid_confirmed
+    - previous_day_admission_adult_covid_suspected
+    - previous_day_admission_pediatric_covid_confirmed
+    - previous_day_admission_pediatric_covid_suspected
+    - deaths_covid
+    - staffing_shortage_today
+  allow_prefixes:
+    - previous_day_
+    - total_
+    - staffed_
+    - inpatient_
+    - icu_
+  exclude_columns:
+    - geocoded_hospital_address
+    - hospital_name
+
+quality:
+  enforce_unique_keys: true
+  allow_duplicate_days: false
+  sentinel_missing_values: [-999999]
