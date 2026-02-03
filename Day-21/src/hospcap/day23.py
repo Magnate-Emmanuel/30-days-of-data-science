@@ -359,7 +359,7 @@ def main(argv: Optional[List[str]] = None) -> int:
     r.add_argument("--contract-name", type=str, default=None, help="Contract name (defaults to latest).")
     r.add_argument("--quality-run-id", type=str, default=None, help="Quality run_id to use (defaults to latest).")
     r.add_argument("--source-table", type=str, default="silver.hhs_state_timeseries", help="Silver source table.")
-    r.add_argument("--targets", nargs="+", default=["inpatient_beds_used", "icu_beds_used"], help="Targets to feature-engineer.")
+    r.add_argument("--targets", nargs="+", default=["inpatient_beds_used", "staffed_adult_icu_bed_occupancy"], help="Targets to feature-engineer.")
     r.add_argument("--max-ffill-days", type=int, default=3, help="Forward-fill up to this many days.")
     args = p.parse_args(argv)
 
