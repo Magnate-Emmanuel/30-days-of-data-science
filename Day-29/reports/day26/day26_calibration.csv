@@ -1,0 +1,7 @@
+target,horizon,method,coverage_80,mean_width_80,pinball_q10,pinball_q50,pinball_q90,n
+inpatient_beds_used,1,gbrt_quantile,0.773936170212766,321.99206710525465,,,,376
+inpatient_beds_used,7,naive_conformal,0.8803191489361702,684.75,,,,376
+inpatient_beds_used,14,gbrt_quantile,0.6781914893617021,460.3656143371709,,,,376
+staffed_adult_icu_bed_occupancy,1,gbrt_quantile,0.7686170212765957,47.624680371981036,,,,376
+staffed_adult_icu_bed_occupancy,7,gbrt_quantile,0.7393617021276596,63.762015983649185,,,,376
+staffed_adult_icu_bed_occupancy,14,gbrt_quantile,0.7047872340425532,67.28701763746251,,,,376

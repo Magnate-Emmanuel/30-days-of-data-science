@@ -1,0 +1,7 @@
+method,model,target,horizon,rmse,n
+gbrt_quantile,hgb_quantile,inpatient_beds_used,1,193.02317553976624,376
+naive_conformal,naive_last,inpatient_beds_used,7,252.93337572015182,376
+gbrt_quantile,hgb_quantile,inpatient_beds_used,14,332.8281202219371,376
+gbrt_quantile,hgb_quantile,staffed_adult_icu_bed_occupancy,1,27.998657741875277,376
+gbrt_quantile,hgb_quantile,staffed_adult_icu_bed_occupancy,7,31.88170943374041,376
+gbrt_quantile,hgb_quantile,staffed_adult_icu_bed_occupancy,14,43.360811460708575,376
